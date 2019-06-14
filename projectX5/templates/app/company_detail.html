@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends 'app/base.html' %}
+{% block body_block %}
+
+<h1>Company detail</h1><br>
+<h2>Name of company:{{company.name}}</h2>
+<h2>Name of company:{{company.ceo}}</h2>
+<h2>Name of company:{{company.city}}</h2>
+
+<a class="bbtn btn-lg btn-success" href="/update/{{company.id}}">Udate company info</a></h2>
+<a class="bbtn btn-lg btn-success" href="/delete/{{company.id}}">Delete company info</a></h2>
+{% endblock %}
